@@ -8,4 +8,54 @@ wheels/
 
 # Virtual environments
 .venv
+
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets
+.env
+*.env
+local.settings.json
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Archives
 *.zip
+*.rar
+*.7z
+*.tar
+*.gz
+
+# Models / large artifacts
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.onnx
+
+# Build/cache
+dist/
+build/
+.cache/
+
+# Optional data/artifacts
+artifacts/
+data/
+datasets/
