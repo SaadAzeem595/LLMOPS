@@ -159,3 +159,28 @@ $ uv sync
 Resolved 140 packages in 1ms
 Checked 139 packages in 4ms
 
+PS D:\LLMOPS-main\ComplianceQAPipeline> uv run python main.py
+INFO:brand-guardian-runner:Starting Audit Session: Credentials
+
+--- 1.nput Payload: INITIALIZING WORKFLOW ---
+I {
+  "video_url": "https://youtu.be/dT7S75eYhcQ",
+  "video_id": "vid_64593eae",
+  "compliance_results": [],
+  "errors": []
+}
+
+.....
+
+--- 2. WORKFLOW EXECUTION COMPLETE ---
+
+=== COMPLIANCE AUDIT REPORT ===
+Video ID:    vid_64593eae
+Status:      FAIL
+
+[ VIOLATIONS DETECTED ]
+- [CRITICAL] Claim Validation: The video makes a vague claim that "Ultra Shear gives you high SPF protection" without specifying an actual SPF value or providing supporting data. For sunscreen products, any SPF-related claim must be specific (e.g., SPF 30, SPF 50) and substantiated by FDA‑approved testing. The lack of a concrete SPF number makes the statement potentially misleading and non‑compliant with OTC drug advertising regulations.
+- [MAJOR] Endorsement Authenticity: The transcript presents John Cena as the "new face" of Neutrogena Ultra Sheer sunscreen and includes a doctor (Dr. Nira) conducting an interview, implying professional endorsement. If these endorsements are not verified or lack proper disclosure, they could violate brand and regulatory guidelines requiring truthful, verifiable endorsements.
+
+[ FINAL SUMMARY ]
+The content contains non‑compliant claims regarding SPF protection and potentially unverified celebrity/medical endorsements. Both issues must be corrected: specify the exact SPF rating with supporting data and ensure all endorsements are authentic and properly disclosed before the video can be approved.
