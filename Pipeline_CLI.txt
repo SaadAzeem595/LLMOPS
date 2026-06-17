@@ -184,3 +184,10 @@ Status:      FAIL
 
 [ FINAL SUMMARY ]
 The content contains non‑compliant claims regarding SPF protection and potentially unverified celebrity/medical endorsements. Both issues must be corrected: specify the exact SPF rating with supporting data and ensure all endorsements are authentic and properly disclosed before the video can be approved.
+
+
+
+PS D:\LLMOPS-main\ComplianceQAPipeline> uv run uvicorn backend.src.api.server:app --reload
+INFO:     Will watch for changes in these directories: ['D:\\LLMOPS-main\\ComplianceQAPipeline']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [17524] using StatReload
